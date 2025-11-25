@@ -117,28 +117,26 @@ function ProjectCard({
 
           {/* Actions */}
           <div className="flex items-center gap-3 pt-4 border-t border-border/50">
-            <Button
-              variant="outline"
-              size="sm"
-              className="flex-1 group/btn"
-              asChild
-            >
-              <a href={project.github}>
+            <a href={project.github} className="flex-1">
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full group/btn"
+              >
                 <Github className="w-4 h-4 mr-2" />
                 Code
-              </a>
-            </Button>
-            <Button
-              variant="neon"
-              size="sm"
-              className="flex-1 group/btn"
-              asChild
-            >
-              <a href={project.live}>
+              </Button>
+            </a>
+            <a href={project.live} className="flex-1">
+              <Button
+                variant="neon"
+                size="sm"
+                className="w-full group/btn"
+              >
                 Live Demo
                 <ArrowUpRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-              </a>
-            </Button>
+              </Button>
+            </a>
           </div>
         </CardContent>
       </Card>
